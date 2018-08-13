@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Connection Type</title>
+    <meta name="description" content="Depending on the connection, a different image will be displayed">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F7DF1E">
+    <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <article>
+        <h2>What is Golden Gates ?</h2>
+        <img class="picture" src="./img/golden-gates.jpeg" alt="es una foto de naruto">
+        <p>
+            The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide (1.6 km) strait connecting San
+            Francisco Bay and the Pacific Ocean. The structure links the American city of San Francisco, California – the
+            northern tip of the San Francisco Peninsula – to Marin County, carrying both U.S. Route 101 and California State
+            Route 1 across the strait.
+        </p>
+    </article>
+    <article>
+        <h2>What is Time Square ?</h2>
+        <img class="picture" src="./img/time-square.jpeg" alt="">
+        <p>
+            Times Square is a major commercial intersection, tourist destination, entertainment center and neighborhood in the Midtown
+            Manhattan section of New York City at the junction of Broadway and Seventh Avenue. It stretches from West 42nd
+            to West 47th Streets.
+        </p>
+    </article>
+    <script>
+        // The browser is compatible with service worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js')
+        } else {
+            console.log('The browser not support service worker :(')
+        }
+    </script>
+</body>
+
+</html>
